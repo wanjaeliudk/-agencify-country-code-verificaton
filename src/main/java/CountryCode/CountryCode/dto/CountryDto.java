@@ -4,7 +4,7 @@ public class CountryDto {
 
     private String countryName;
     private String phoneNumber;
-    private Boolean valid;
+    private Boolean status;
 
     public CountryDto() {
     }
@@ -25,12 +25,12 @@ public class CountryDto {
         this.phoneNumber = phoneNumber;
     }
 
-    public Boolean getValid() {
-        return valid;
+    public Boolean getStatus() {
+        return status;
     }
 
-    public void setValid(Boolean valid) {
-        this.valid = valid;
+    public void setStatus(Boolean status) {
+        this.status = status;
     }
 
     @Override
@@ -38,7 +38,7 @@ public class CountryDto {
         return "CountryDto{" +
                 "countryName='" + countryName + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
-                ", valid=" + valid +
+                ", status=" + status +
                 '}';
     }
 }

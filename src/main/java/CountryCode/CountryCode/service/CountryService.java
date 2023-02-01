@@ -1,10 +1,11 @@
 package CountryCode.CountryCode.service;
 
-import CountryCode.CountryCode.repository.CountryRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import CountryCode.CountryCode.dto.CountryDto;
 
-@Service
+import java.util.List;
+
 public interface CountryService {
+
+    List<CountryDto> getAllCountryCodes();
 
 }
